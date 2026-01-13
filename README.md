@@ -1,5 +1,5 @@
 <h1 align="center">
-  <img src="assets/logo.png" alt="Press Start Madrid Logo" width="45" />
+  <img src="assets/icono2.png" alt="Press Start Madrid Logo" width="45" />
   Press Start Madrid
 </h1>
 es un proyecto web desarrollado para la promoción del **alquiler de máquinas de pinball y recreativas** para eventos en Madrid.
