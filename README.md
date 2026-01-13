@@ -63,6 +63,11 @@ https://www.pressstartmadrid.es
 
 <img width="1771" height="908" alt="image" src="https://github.com/user-attachments/assets/cb70e361-b6a6-42a0-8457-a258ed960877" />
 
+<p align="center">
+  <img src="assets/Edicion.gif" width="600" alt="Press Start Madrid Demo" />
+</p>
+
+
 
 
 
@@ -78,6 +83,7 @@ https://www.pressstartmadrid.es
 ├── assets/
 │   └── images/
 └── README.md
+
 
 
 
