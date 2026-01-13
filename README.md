@@ -1,5 +1,5 @@
 <p align="center">
-  <img src="assets/icono2.png" alt="Press Start Madrid Logo" width="90" />
+  <img src="assets/icono2.png" alt="Press Start Madrid Logo" width="190" />
 </p>
 
 <h1 align="center">Press Start Madrid</h1>
