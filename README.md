@@ -53,19 +53,19 @@ https://www.pressstartmadrid.es
 
 ---
 
-## Imágenes del proyecto
-
-<img width="1771" height="908" alt="image" src="https://github.com/user-attachments/assets/a0c28385-c1b6-45a8-9f80-cb4bc3f77dbc" />
-
-<img width="1771" height="908" alt="image" src="https://github.com/user-attachments/assets/250129c1-d237-4827-91fd-21f14ec89914" />
-
-<img width="1771" height="908" alt="image" src="https://github.com/user-attachments/assets/84fdc7fd-333e-4e9e-9592-b5d55ca000f1" />
-
-<img width="1771" height="908" alt="image" src="https://github.com/user-attachments/assets/cb70e361-b6a6-42a0-8457-a258ed960877" />
+## 📸 Imágenes del proyecto
 
 <p align="center">
-  <img src="assets/Edicion.gif" width="600" alt="Press Start Madrid Demo" />
+  <img src="https://github.com/user-attachments/assets/a0c28385-c1b6-45a8-9f80-cb4bc3f77dbc" width="390" />
+  <img src="https://github.com/user-attachments/assets/250129c1-d237-4827-91fd-21f14ec89914" width="390" />
 </p>
+
+<p align="center">
+  <img src="https://github.com/user-attachments/assets/84fdc7fd-333e-4e9e-9592-b5d55ca000f1" width="390" />
+  <img src="https://github.com/user-attachments/assets/cb70e361-b6a6-42a0-8457-a258ed960877" width="390" />
+</p>
+
+
 
 
 
