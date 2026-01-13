@@ -10,7 +10,7 @@ La web está orientada a presentar el servicio de forma clara, visual y directa,
 
 El objetivo principal de **Press Start Madrid** es servir como plataforma digital para:
 
-- Promocionar el alquiler de máquinas de pinball y arcade
+- Promocionar el alquiler de máquinas de pinball, arcade, billar, diana...
 - Mostrar el tipo de eventos en los que se ofrece el servicio
 - Facilitar el contacto con clientes potenciales
 - Transmitir una estética retro/gaming alineada con el producto
