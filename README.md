@@ -1,4 +1,4 @@
-# 🎮 Press Start Madrid
+# <img src="https://skillicons.dev/icons?i=html,css,js&perline=3" /> Press Start Madrid
 
 **Press Start Madrid** es un proyecto web desarrollado para la promoción del **alquiler de máquinas de pinball y recreativas** para eventos en Madrid.
 
