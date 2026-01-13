@@ -1,0 +1,208 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alquiler de Futbolines — PressStart Madrid</title>
+  <meta name="description" content="Alquiler de futbolín profesional en Madrid para bares, fiestas y eventos." />
+
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icono2.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icono2.png">
+  <meta name="theme-color" content="#0b0d12">
+
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+
+<body class="has-80s page-alquiler">
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="brand">
+      <img src="assets/icono2.png" alt="PressStart Madrid" class="brand-logo" />
+      <strong class="neon">PressStart Madrid</strong>
+    </div>
+
+    <div class="menu" id="mainMenu">
+      <a href="index2.html#inicio">Inicio</a>
+
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+          Catálogo <span class="caret">▾</span>
+        </a>
+        <div class="dropdown-menu" role="menu" aria-label="Catálogo">
+          <a href="alquiler-pinballs.html" role="menuitem">Alquiler de pinballs</a><hr>
+          <a href="alquiler-arcades.html" role="menuitem">Alquiler de arcades</a><hr>
+          <a href="alquiler-futbolines.html" role="menuitem" aria-current="page">Alquiler de futbolines</a><hr>
+          <a href="alquiler-billares.html" role="menuitem">Alquiler de billares</a><hr>
+          <a href="alquiler-dianas.html" role="menuitem">Alquiler de dianas</a><hr>
+          <a href="alquiler-ping-pong.html" role="menuitem">Ping Pong</a>
+        </div>
+      </div>
+
+      <a href="alquiler-pinballs.html">Alquiler de Pinballs</a>
+      <a href="galeria.html">Galería</a>
+      <a href="index2.html#contacto">Contacto</a>
+    </div>
+
+    <div class="social">
+        <a href="https://www.instagram.com/pressstartmadrid/" target="_blank" class="social-icon">
+            <img src="assets/instagram.png" alt="Instagram">
+        </a>
+
+        <a href="https://x.com/pressstartmad" target="_blank" class="social-icon">
+            <img src="assets/x.png" alt="X">
+        </a>
+
+        <a href="https://www.tiktok.com/@pressstartmadrid" target="_blank" class="social-icon">
+            <img src="assets/tiktok.png" alt="TikTok">
+        </a>
+    </div>
+
+
+    <button class="burger btn" id="openMenu" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  </nav>
+
+  <!-- HERO FUTBOLINES -->
+  <header class="hero">
+    <div class="hero-bg"></div>
+    <div class="hero-grid"></div>
+
+    <div class="content">
+      <span class="kick">
+        Bares · Peñas · Fiestas privadas · Empresas
+      </span>
+
+      <div class="logo-hero logo-flip">
+        <img class="front" src="assets/bolaFutbol.png" alt="Logo PressStart Madrid">
+        <img class="back" src="assets/icono.png" alt="Logo Madrid PressStart">
+      </div>
+
+
+      <h1 class="title neon">
+        <span>FUTBOLINES DISPONIBLES</span>
+      </h1>
+
+      <p class="subtitle">
+        Futbolín profesional robusto, con barras cromadas y jugadores equilibrados.  
+        Ideal para bares, peñas, fiestas privadas y eventos de empresa.
+      </p>
+    </div>
+    <div class="scroll-indicator">
+        <span class="arrow">⌄</span>
+        <span class="scroll-text">Desliza para explorar</span>
+    </div>
+  </header>
+
+  <!-- LISTADO FUTBOLINES (SOLO 1) -->
+  <main class="section wrap">
+    <div class="pinballs-grid">
+      <article class="pinball-card">
+        <img src="assets/futbolin.png" alt="Futbolín profesional" loading="lazy" decoding="async" />
+        <div class="pinball-info">
+          <div>
+            <h3>Futbolín Pro Madrid</h3>
+            <div class="meta">Modelo profesional · Uso intensivo</div>
+            <p>
+              Futbolín profesional, perfecto para bares y eventos. 
+              Incluye pelotas, nivelado y montaje en el lugar.
+            </p>
+            <div class="chips-row">
+              <span class="chip-ghost">⚽ Futbolín profesional</span>
+              <span class="chip-ghost">🛠 Montaje incluido</span>
+              <span class="chip-ghost">🎉 Ideal para eventos</span>
+            </div>
+          </div>
+          <div class="pinball-actions">
+            <button
+              class="btn-green rent-btn"
+              data-name="Futbolín Pro Madrid"
+              data-image="assets/futbolin-standard.jpg"
+              data-desc="Futbolín profesional para uso intensivo, ideal para bares, peñas y eventos."
+              data-features="Uso intensivo,Montaje incluido,Perfecto para bares y eventos">
+              ALQUILAR AHORA
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </main>
+
+  <!-- MODAL alquiler -->
+  <dialog id="rentModal" class="modal">
+    <div class="modal-inner rent">
+      <h3 class="neon" id="rentTitle">¿Cómo quieres contactar?</h3>
+      <p id="rentSubtitle" style="color:var(--muted)"></p>
+
+      <img id="rentImage" alt="" style="width:100%;max-height:280px;object-fit:cover;border-radius:12px;display:none;margin:6px 0 10px" />
+
+      <div id="rentFeatures" class="chips-row" style="margin:8px 0 6px"></div>
+      <p id="rentDesc" style="margin-bottom:10px"></p>
+
+      <div class="rent-actions">
+        <a id="rentCall" class="cta cta-call" href="tel:630852311">📞 Llamar Ahora · 630 85 23 11</a>
+        <a id="rentWhatsapp" class="cta cta-wa" target="_blank" rel="noreferrer">💬 WhatsApp</a>
+        <a id="rentEmail" class="cta cta-mail">✉️ Email</a>
+        <button class="cta cta-cancel" onclick="document.getElementById('rentModal').close()">Cancelar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-row">
+        <div class="brand">
+          <img src="assets/icono.png" alt="PressStart Madrid" class="brand-logo" />
+          <strong class="neon">PressStart Madrid</strong>
+        </div>
+
+        <nav class="footer-menu">
+          <a href="index2.html#inicio">Inicio</a>
+          <a href="alquiler-pinballs.html">Pinballs</a>
+          <a href="alquiler-billares.html">Billares</a>
+          <a href="alquiler-arcades.html">Arcades</a>
+          <a href="alquiler-futbolines.html">Futbolines</a>
+          <a href="alquiler-dianas.html">Dianas</a>
+          <a href="alquiler-ping-pong.html">Ping Pong</a>
+          <a href="index2.html#contacto">Contacto</a>
+        </nav>
+
+        <div class="footer-social">
+            <a href="https://www.instagram.com/pressstartmadrid/" target="_blank" class="social-icon">
+                <img src="assets/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="https://x.com/pressstartmad" target="_blank" class="social-icon">
+                <img src="assets/x.png" alt="X">
+            </a>
+
+            <a href="https://www.tiktok.com/@pressstartmadrid" target="_blank" class="social-icon">
+                <img src="assets/tiktok.png" alt="TikTok">
+            </a>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <span>
+          📞 <a href="tel:630852311">630 85 23 11</a> ·
+          ✉️ <a href="mailto:pressstartmadridd@gmail.com">pressstartmadridd@gmail.com</a>
+        </span>
+        <span>
+          © <span id="ycopy"></span> PressStart Madrid — Comunidad de Madrid
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      var y=document.getElementById('ycopy');
+      if(y) y.textContent=new Date().getFullYear();
+    })();
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+

@@ -1,0 +1,130 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <title>PressStart Madrid — Loading</title>
+
+  <!-- SEO Meta Tags -->
+  <meta name="description" content="Press Start Madrid: alquiler de máquinas arcade, pinballs, futbolines, billares y dianas para eventos, fiestas y empresas. Retro gaming en Madrid.">
+  <meta name="keywords" content="alquiler arcade, máquinas arcade, alquiler pinballs, alquiler futbolines, recreativas madrid, alquiler billares, alquiler dianas, retro gaming madrid, eventos arcade, fiestas gaming">
+  <meta name="author" content="Press Start Madrid">
+
+  <!-- Open Graph (para compartir en redes) -->
+  <meta property="og:title" content="Press Start Madrid - Alquiler de Arcades y Máquinas Retro">
+  <meta property="og:description" content="Alquilamos máquinas arcade, pinballs, futbolines, billares y más para eventos y fiestas en Madrid.">
+  <meta property="og:image" content="https://pressstartmadrid.es/assets/logo.png">
+  <meta property="og:url" content="https://pressstartmadrid.es/">
+  <meta property="og:type" content="website">
+
+  <!-- SEO para móvil -->
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <!-- JSON-LD para SEO avanzado -->
+  <script type="application/ld+json">
+  {
+    "@context": "https://schema.org",
+    "@type": "LocalBusiness",
+    "name": "Press Start Madrid",
+    "description": "Alquiler profesional de máquinas arcade, pinballs, futbolines, billares y dianas en Madrid para eventos y fiestas.",
+    "url": "https://pressstartmadrid.es",
+    "logo": "https://pressstartmadrid.es/assets/logo.png",
+    "image": "https://pressstartmadrid.es/assets/logo.png",
+    "areaServed": "Madrid, España",
+    "keywords": "alquiler arcade, recreativas madrid, alquiler pinballs, alquiler futbolines, fiestas retro, eventos gaming",
+    "address": {
+      "@type": "PostalAddress",
+      "addressLocality": "Madrid",
+      "addressCountry": "ES"
+    }
+  }
+  </script>
+
+  <style>
+    *{
+      margin:0;
+      padding:0;
+      box-sizing:border-box;
+    }
+
+    body{
+      min-height:100vh;
+      overflow:hidden;
+      font-family:Arial, Helvetica, sans-serif;
+      display:flex;
+      justify-content:center;
+      align-items:center;
+      color:white;
+      background:
+        radial-gradient(900px 500px at 10% 10%, rgba(255,62,165,.10), transparent 60%),
+        radial-gradient(700px 400px at 90% 0%, rgba(0,245,255,.08), transparent 55%),
+        linear-gradient(180deg,#08101e 0%,#0b0d12 70%);
+    }
+
+    .loading-wrapper{
+      text-align:center;
+    }
+
+    .loading-logo{
+      max-width:420px;
+      width:80vw;
+      height:auto;
+      display:block;
+      margin:0 auto 32px;
+      filter:
+        drop-shadow(0 0 18px rgba(255,62,165,.6))
+        drop-shadow(0 0 26px rgba(0,245,255,.6));
+    }
+
+    .loading-text{
+      letter-spacing:0.35em;
+      text-indent:0.35em;
+      font-size:1.1rem;
+      opacity:0.95;
+      margin-bottom:12px;
+    }
+
+    /* Barra de loading ANIMADA */
+    .loading-bar{
+      width:140px;
+      height:3px;
+      margin:0 auto;
+      border-radius:999px;
+      background:#111827; /* base oscura */
+      overflow:hidden;
+      position:relative;
+    }
+
+    .loading-bar::before{
+      content:"";
+      position:absolute;
+      inset:0;
+      background:linear-gradient(90deg,#ff4fd8,#b44dff,#45f0ff);
+      transform:translateX(-100%);
+      animation:barMove 1.4s linear infinite;
+    }
+
+    @keyframes barMove{
+      0%   { transform:translateX(-100%); }
+      50%  { transform:translateX(0%); }
+      100% { transform:translateX(100%); }
+    }
+  </style>
+</head>
+
+<body>
+  <div class="loading-wrapper">
+    <img src="assets/4towers.png" alt="PressStart Madrid" class="loading-logo">
+    <p class="loading-text">L O A D I N G</p>
+    <div class="loading-bar"></div>
+  </div>
+
+  <!-- Redirección a la web principal -->
+  <script>
+    window.addEventListener('load', function () {
+      setTimeout(function () {
+        window.location.href = "index2.html";
+      }, 2500); // 2,5 segundos
+    });
+  </script>
+</body>
+</html>

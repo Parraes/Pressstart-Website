@@ -1,0 +1,210 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Alquiler de Billares — PressStart Madrid</title>
+  <meta name="description" content="Alquiler de mesas de billar en Madrid para eventos, locales y empresas con transporte incluido." />
+
+  <!-- Favicon -->
+  <link rel="icon" type="image/png" sizes="32x32" href="assets/icono2.png">
+  <link rel="icon" type="image/png" sizes="16x16" href="assets/icono2.png">
+  <meta name="theme-color" content="#0b0d12">
+
+  <link rel="stylesheet" href="css/estilos.css" />
+</head>
+<body class="has-80s page-alquiler">
+  <div class="cursor" aria-hidden="true"></div>
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="brand">
+      <img src="assets/icono2.png" alt="PressStart Madrid" class="brand-logo" />
+      <strong class="neon">PressStart Madrid</strong>
+    </div>
+
+    <div class="menu" id="mainMenu">
+      <a href="index2.html#inicio">Inicio</a>
+
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle" aria-haspopup="true" aria-expanded="false">
+          Catálogo <span class="caret">▾</span>
+        </a>
+        <div class="dropdown-menu" role="menu" aria-label="Catálogo">
+          <a href="alquiler-pinballs.html" role="menuitem">Alquiler de pinballs</a><hr>
+          <a href="alquiler-arcades.html" role="menuitem">Alquiler de arcades multijuego</a><hr>
+          <a href="alquiler-futbolines.html" role="menuitem">Alquiler de futbolines</a><hr>
+          <a href="alquiler-billares.html" role="menuitem" aria-current="page">Alquiler de billares</a><hr>
+          <a href="alquiler-dianas.html" role="menuitem">Alquiler de dianas</a><hr>
+          <a href="alquiler-ping-pong.html" role="menuitem">Ping Pong</a>
+        </div>
+      </div>
+
+      <a href="alquiler-pinballs.html">Alquiler de Pinballs</a>
+      <a href="galeria.html">Galería</a>
+      <a href="index2.html#contacto">Contacto</a>
+    </div>
+
+    <div class="social">
+        <a href="https://www.instagram.com/pressstartmadrid/" target="_blank" class="social-icon">
+            <img src="assets/instagram.png" alt="Instagram">
+        </a>
+
+        <a href="https://x.com/pressstartmad" target="_blank" class="social-icon">
+            <img src="assets/x.png" alt="X">
+        </a>
+
+        <a href="https://www.tiktok.com/@pressstartmadrid" target="_blank" class="social-icon">
+            <img src="assets/tiktok.png" alt="TikTok">
+        </a>
+    </div>
+
+
+    <button class="burger btn" id="openMenu" aria-label="Abrir menú" aria-expanded="false">Menú</button>
+  </nav>
+
+  <!-- HERO ALQUILER BILLAres -->
+  <header class="hero">
+    <div class="hero-bg" id="heroBg"></div>
+    <div class="hero-grid"></div>
+
+    <div class="content">
+      <span class="kick">
+        Eventos · Bares · Locales de ocio · Comunidad de Madrid
+      </span>
+
+      <div class="logo-hero logo-flip">
+        <!-- Puedes usar el mismo combo que en index o el que tengas para el resto -->
+        <img class="front" src="assets/bola.png" alt="Logo PressStart Madrid">
+        <img class="back" src="assets/icono.png" alt="Bola de pinball PressStart">
+      </div>
+
+      <h1 class="title neon">
+        <span>BILLARES DISPONIBLES</span>
+      </h1>
+
+      <p class="subtitle">
+        Mesas de billar profesionales, niveladas y listas para jugar. 
+        Incluimos bolas, tacos, triángulo y todo lo necesario para tu evento en la Comunidad de Madrid.
+      </p>
+    </div>
+    <div class="scroll-indicator">
+        <span class="arrow">⌄</span>
+        <span class="scroll-text">Desliza para explorar</span>
+    </div>
+  </header>
+
+  <!-- LISTADO DE BILLARes -->
+  <main class="section wrap">
+    <div class="pinballs-grid"><!-- reutilizamos estilos de pinball-card -->
+
+    <!-- Billar Profesional -->
+    <article class="pinball-card">
+    <img src="assets/billar.png" alt="Mesa de billar profesional" loading="lazy" decoding="async" />
+    <div class="pinball-info">
+        <div>
+        <h3>Billar Profesional</h3>
+        <div class="meta">9 pies · Nivelado profesional</div>
+        <p>
+            Mesa de billar profesional perfecta para eventos, locales, fiestas y rodajes.
+            Incluye bolas, tacos, triángulo y todo lo necesario para jugar al máximo nivel.
+        </p>
+
+        <div class="chips-row">
+            <span class="chip-ghost">🎱 Juego Americano</span>
+            <span class="chip-ghost">🧰 Nivelado Pro</span>
+        </div>
+        </div>
+
+        <div class="pinball-actions">
+        <button
+            class="btn-green rent-btn"
+            data-name="Billar Profesional"
+            data-image="assets/billar.png"
+            data-desc="Mesa de billar profesional nivelada y lista para jugar. Incluye bolas, tacos y accesorios."
+            data-features="Juego Americano,Madera Premium,Nivelado Pro">
+            ALQUILAR AHORA
+        </button>
+        </div>
+    </div>
+    </article>
+
+
+    </div>
+  </main>
+
+  <!-- MODAL alquiler (mismo que en pinballs, reutilizado por script.js) -->
+  <dialog id="rentModal" class="modal">
+    <div class="modal-inner rent">
+      <h3 class="neon" id="rentTitle">¿Cómo quieres contactar?</h3>
+      <p id="rentSubtitle" style="color:var(--muted)"></p>
+
+      <img id="rentImage" alt="" style="width:100%;max-height:280px;object-fit:cover;border-radius:12px;display:none;margin:6px 0 10px" />
+
+      <div id="rentFeatures" class="chips-row" style="margin:8px 0 6px"></div>
+      <p id="rentDesc" style="margin-bottom:10px"></p>
+
+      <div class="rent-actions">
+        <a id="rentCall" class="cta cta-call" href="tel:630852311">📞 Llamar Ahora · 630 85 23 11</a>
+        <a id="rentWhatsapp" class="cta cta-wa" target="_blank" rel="noreferrer">💬 WhatsApp</a>
+        <a id="rentEmail" class="cta cta-mail">✉️ Email</a>
+        <button class="cta cta-cancel" onclick="document.getElementById('rentModal').close()">Cancelar</button>
+      </div>
+    </div>
+  </dialog>
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-row">
+        <div class="brand">
+          <img src="assets/icono.png" alt="PressStart Madrid" class="brand-logo" />
+          <strong class="neon">PressStart Madrid</strong>
+        </div>
+
+        <nav class="footer-menu">
+          <a href="index2.html#inicio">Inicio</a>
+          <a href="alquiler-pinballs.html">Pinballs</a>
+          <a href="alquiler-billares.html">Billares</a>
+          <a href="index2.html#catalogo">Catálogo</a>
+          <a href="index2.html#contacto">Contacto</a>
+        </nav>
+
+        <div class="footer-social">
+            <a href="https://www.instagram.com/pressstartmadrid/" target="_blank" class="social-icon">
+                <img src="assets/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="https://x.com/pressstartmad" target="_blank" class="social-icon">
+                <img src="assets/x.png" alt="X">
+            </a>
+
+            <a href="https://www.tiktok.com/@pressstartmadrid" target="_blank" class="social-icon">
+                <img src="assets/tiktok.png" alt="TikTok">
+            </a>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <span>
+          📞 <a href="tel:630852311">630 85 23 11</a> ·
+          ✉️ <a href="mailto:pressstartmadridd@gmail.com">pressstartmadridd@gmail.com</a>
+        </span>
+        <span>
+          © <span id="ycopy"></span> PressStart Madrid — Comunidad de Madrid
+        </span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    (function(){
+      var y=document.getElementById('ycopy');
+      if(y) y.textContent=new Date().getFullYear();
+    })();
+  </script>
+  <script src="js/script.js"></script>
+</body>
+</html>
+

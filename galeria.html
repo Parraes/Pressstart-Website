@@ -1,0 +1,139 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="utf-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Galería — En mantenimiento</title>
+
+  <link rel="icon" type="image/png" href="assets/icono2.png">
+  <meta name="theme-color" content="#0b0d12">
+
+  <link rel="stylesheet" href="css/estilos.css" />
+
+  <style>
+    /* Caja del mensaje */
+    .maintenance-box{
+      max-width:420px;
+      margin:140px auto 80px;
+      padding:40px 32px;
+      background:linear-gradient(180deg,#0e1322,#0b0f1b);
+      border-radius:18px;
+      text-align:center;
+      box-shadow:0 0 25px rgba(0,0,0,.55);
+    }
+    .maintenance-box h1{
+      font-size:1.9rem;
+      margin-bottom:15px;
+      color:#6cf2ff;
+      text-shadow:0 0 12px rgba(0,245,255,.5);
+    }
+    .maintenance-box p{
+      color:#9fb4d8;
+      font-size:1rem;
+      line-height:1.45;
+    }
+  </style>
+</head>
+
+<body class="has-80s">
+
+  <!-- NAV -->
+  <nav class="nav">
+    <div class="brand">
+      <img src="assets/icono2.png" alt="PressStart Madrid" class="brand-logo" />
+      <strong class="neon">PressStart Madrid</strong>
+    </div>
+
+    <div class="menu" id="mainMenu">
+      <a href="index2.html#inicio">Inicio</a>
+
+      <div class="dropdown">
+        <a href="#" class="dropdown-toggle">Catálogo ▾</a>
+        <div class="dropdown-menu">
+          <a href="alquiler-pinballs.html">Alquiler de pinballs</a><hr>
+          <a href="alquiler-billares.html">Alquiler de billares</a><hr>
+          <a href="alquiler-arcades.html">Alquiler de arcades</a><hr>
+          <a href="alquiler-futbolines.html">Alquiler de futbolines</a><hr>
+          <a href="alquiler-dianas.html">Alquiler de dianas</a><hr>
+          <a href="alquiler-pingpong.html">Ping Pong</a>
+        </div>
+      </div>
+
+      <a href="alquiler-pinballs.html">Alquiler de Pinballs</a>
+      <a href="galeria.html" aria-current="page">Galería</a>
+      <a href="index2.html#contacto">Contacto</a>
+    </div>
+
+    <div class="social">
+      <a href="https://www.instagram.com/pressstartmadrid/" target="_blank">📸</a>
+      <a href="https://x.com/pressstartmad" target="_blank">✖️</a>
+      <a href="https://www.tiktok.com/@pressstartmadrid" target="_blank">🎵</a>
+    </div>
+
+    <button class="burger btn" id="openMenu">Menú</button>
+  </nav>
+
+  <!-- CONTENIDO: MANTENIMIENTO -->
+  <div class="maintenance-box">
+    <h1>Galería en mantenimiento</h1>
+    <p>Estamos preparando esta sección para mostrar fotos reales de nuestros eventos, montajes y máquinas.<br><br>
+      Vuelve pronto. 👾✨
+    </p>
+  </div>
+
+  <!-- 🔒 CONTENIDO ORIGINAL (comentado) -->
+  <!--
+    Aquí estaba la galería estilo Instagram.
+    Cuando quieras activarla, solo me dices "Reactívala".
+  -->
+
+  <!-- FOOTER -->
+  <footer class="site-footer">
+    <div class="wrap">
+      <div class="footer-row">
+        <div class="brand">
+          <img src="assets/icono.png" class="brand-logo" alt="">
+          <strong class="neon">PressStart Madrid</strong>
+        </div>
+
+        <nav class="footer-menu">
+          <a href="index2.html#inicio">Inicio</a>
+          <a href="alquiler-pinballs.html">Pinballs</a>
+          <a href="alquiler-billares.html">Billares</a>
+          <a href="alquiler-arcades.html">Arcades</a>
+          <a href="alquiler-futbolines.html">Futbolines</a>
+          <a href="alquiler-dianas.html">Dianas</a>
+          <a href="alquiler-pingpong.html">Ping Pong</a>
+          <a href="galeria.html">Galería</a>
+        </nav>
+
+        <div class="social">
+            <a href="https://www.instagram.com/pressstartmadrid/" target="_blank" class="social-icon">
+                <img src="assets/instagram.png" alt="Instagram">
+            </a>
+
+            <a href="https://x.com/pressstartmad" target="_blank" class="social-icon">
+                <img src="assets/x.png" alt="X">
+            </a>
+
+            <a href="https://www.tiktok.com/@pressstartmadrid" target="_blank" class="social-icon">
+                <img src="assets/tiktok.png" alt="TikTok">
+            </a>
+        </div>
+
+      </div>
+
+      <div class="footer-meta">
+        <span>📞 <a href="tel:630852311">630 85 23 11</a> · ✉️ <a href="mailto:pressstartmadrid@gmail.com">pressstartmadrid@gmail.com</a></span>
+        <span>© <span id="ycopy"></span> PressStart Madrid — Comunidad de Madrid</span>
+      </div>
+    </div>
+  </footer>
+
+  <script>
+    document.getElementById("ycopy").textContent = new Date().getFullYear();
+  </script>
+
+  <script src="js/script.js"></script>
+</body>
+</html>
